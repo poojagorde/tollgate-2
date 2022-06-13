@@ -1,0 +1,29 @@
+<div class="container-search">
+  <nav class="card-search">
+    <div class="container-search">
+      <h1>NBA Team List App</h1>
+    </div>
+  </nav>
+
+<!-- Team Form -->
+  <div>
+    <div id="search"> <h2>Search by Name or Team</h2>
+      <br />
+      <input id="text-box" type="text" data-ng-model="name" /> 
+      <p id="name_field">
+      {{ name }}
+      </p>
+      </div> 
+        
+        <div id="list" class="container" data-ng-controller="SimpleController">
+    <ul>
+          <li data-ng-repeat="play in players | filter:name">
+          {{ play.name }} - {{ play.team}}
+          </li>
+        <ul> 
+  </div>
+  
+    <button routerLink="/search" style="width: 30%; float:right">
+      List and Search for Team Player
+  </div>
+  

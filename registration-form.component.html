@@ -1,0 +1,26 @@
+
+<div class="container-search">
+  <nav class="card-search">
+    <div class="container-search">
+      <h1>NBA Team List App</h1>
+    </div>
+  </nav>
+
+<!-- Team Form -->
+  <div>
+    <section id="person">
+      <div class="card card-container">
+        <img id="profile-img" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" class="profile-img-card"
+          alt="contact-img" />
+        <form [formGroup]="teamFormGroup">
+          <input type="text" placeholder="Player Name" formControlName="player">
+          <input type="text" placeholder="Team Name" formControlName="teamName">
+          <button (click)="postNewPlayer()">Add To Team</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  <button routerLink="/search" style="width: 30%; float:right">
+    List and Search for Team Player
+  </button>
+</div>
